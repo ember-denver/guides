@@ -2,7 +2,7 @@
 
 The source for the Ember.js Guides.
 
-## Contributing
+## Contributin
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
