@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-500 560 1000 880" enable-background="new -500 560 1000 880" xml:space="preserve">
+<g id="Layer_2">
+</g>
+<rect x="-495" y="548.4" fill="#FAF2ED" width="1009" height="903.1"/>
+<rect x="-300.9" y="596.5" fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="250.3" height="40"/>
+<rect x="-50.7" y="596.5" fill="#FFFFFF" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" width="501" height="40"/>
+<rect x="-50.7" y="674.4" fill="#FFFFFF" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" width="501" height="100.3"/>
+<rect x="-50.7" y="813.4" fill="#FFFFFF" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" width="501" height="136"/>
+<rect x="-50.9" y="1087.1" fill="#FFFFFF" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" width="501.2" height="136.1"/>
+<rect x="-511.3" y="548.4" fill="#F3715C" width="199" height="903.3"/>
+<rect x="-300.9" y="813.4" fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="250.3" height="136"/>
+<rect x="-300.9" y="1087.1" fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="250.3" height="136.2"/>
+<rect x="-300.9" y="1292.5" fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="250.3" height="118.4"/>
+<rect x="-39.8" y="1292.5" fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="250.8" height="118.4"/>
+<rect x="222.3" y="1292.5" fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" width="250.2" height="118.4"/>
+<rect x="-301.8" y="605.2" fill="none" width="90.2" height="40"/>
+<text transform="matrix(1 0 0 1 -282.6484 625.542)" font-family="'Lato-Bold'" font-size="27.2728">URL</text>
+<rect x="-280.7" y="694.6" fill="none" width="112.3" height="109.7"/>
+<text transform="matrix(1 0 0 1 -280.6357 714.9531)" font-family="'Lato-Bold'" font-size="27.2728">Router</text>
+<text transform="matrix(1 0 0 1 -280.6357 743.6074)" font-family="'Lato-Italic'" font-size="23.8636">router.js</text>
+<rect x="-282.2" y="830.7" fill="none" width="192.1" height="109.7"/>
+<text transform="matrix(1 0 0 1 -282.1333 850.9688)" font-family="'Lato-Bold'" font-size="27.2728">Route</text>
+<text transform="matrix(1 0 0 1 -282.1333 883.6836)" font-family="'Lato-Bold'" font-size="27.2728">Handler</text>
+<text transform="matrix(1 0 0 1 -282.1333 912.333)" font-family="'Lato-Italic'" font-size="23.8636">routes/rentals.js</text>
+<rect x="-281.7" y="1113.2" fill="none" width="222.5" height="80"/>
+<text transform="matrix(1 0 0 1 -281.6401 1133.4141)" font-family="'Lato-Bold'" font-size="27.2728">Template</text>
+<text transform="matrix(1 0 0 1 -281.6401 1162.0625)" font-family="'Lato-Italic'" font-size="23.8636">templates/rentals.hbs</text>
+<rect x="-300.9" y="674.4" fill="none" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10" width="250.3" height="100.3"/>
+<g>
+	<line fill="none" x1="-83.8" y1="949.5" x2="-43.2" y2="990.2"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="-83.8" y1="949.5" x2="-48.2" y2="985.2"/>
+		<g>
+			<polygon points="-43.2,978.8 -54.4,990.3 -43.2,990.2 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<line fill="none" x1="-239.1" y1="949.4" x2="-239.1" y2="1086.1"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="-239.1" y1="949.4" x2="-239.1" y2="1079.3"/>
+		<g>
+			<polygon points="-231.2,1078.2 -247.1,1078.2 -239.1,1086.1 			"/>
+		</g>
+	</g>
+</g>
+<rect x="-22.9" y="609.5" fill="none" width="306.5" height="26.9"/>
+<text transform="matrix(1 0 0 1 -22.8853 621.958)" font-family="'Menlo-Regular'" font-size="16.3327">http://localhost:4200/rentals</text>
+<rect x="-21.1" y="694.1" fill="none" width="293.4" height="80"/>
+<text transform="matrix(1 0 0 1 -21.0854 707.4727)" font-family="'Menlo-Regular'" font-size="17.4966">Router.map(</text>
+<text transform="matrix(1 0 0 1 92.8628 707.4727)" fill="#9A5435" font-family="'Menlo-Regular'" font-size="17.4966">function</text>
+<text transform="matrix(1 0 0 1 175.7549 707.4727)" fill="#4872B8" font-family="'Menlo-Regular'" font-size="17.4966">()</text>
+<text transform="matrix(1 0 0 1 196.4434 707.4727)" font-family="'Menlo-Regular'" font-size="17.4966"> </text>
+<text transform="matrix(1 0 0 1 206.8086 707.4727)" fill="#4872B8" font-family="'Menlo-Regular'" font-size="17.4966">{</text>
+<text transform="matrix(1 0 0 1 -21.0854 728.4697)" font-family="'Menlo-Regular'" font-size="17.4966">  </text>
+<text transform="matrix(1 0 0 1 -0.3511 728.4697)" fill="#9A5435" font-family="'Menlo-Regular'" font-size="17.4966">this</text>
+<text transform="matrix(1 0 0 1 41.0728 728.4697)" font-family="'Menlo-Regular'" font-size="17.4966">.route</text>
+<text transform="matrix(1 0 0 1 103.23 728.4697)" font-family="'Menlo-Regular'" font-size="17.4966">(</text>
+<text transform="matrix(1 0 0 1 112.02 728.4697)" fill="#426BB1" font-family="'Menlo-Regular'" font-size="17.4966">&apos;rentals&apos;</text>
+<text transform="matrix(1 0 0 1 205.2354 728.4697)" font-family="'Menlo-Regular'" font-size="17.4966">);</text>
+<text transform="matrix(1 0 0 1 -21.0854 749.4697)" font-family="'Menlo-Regular'" font-size="17.4966">});</text>
+<rect x="-25.2" y="830.9" fill="none" width="480.7" height="106.5"/>
+<text transform="matrix(1 0 0 1 -25.2124 844.1396)" fill="#9A5435" font-family="'Menlo-Regular'" font-size="17.4966">export default</text>
+<text transform="matrix(1 0 0 1 119.7935 844.1396)" font-family="'Menlo-Regular'" font-size="17.4966"> Ember.Route.extend({</text>
+<text transform="matrix(1 0 0 1 -25.2124 865.1396)" font-family="'Menlo-Regular'" font-size="17.4966">  model() {</text>
+<text transform="matrix(1 0 0 1 -25.2124 886.1348)" font-family="'Menlo-Regular'" font-size="17.4966">    </text>
+<text transform="matrix(1 0 0 1 16.2085 886.1348)" fill="#9A5435" font-family="'Menlo-Regular'" font-size="17.4966">return</text>
+<text transform="matrix(1 0 0 1 78.3677 886.1348)" font-family="'Menlo-Regular'" font-size="17.4966"> </text>
+<text transform="matrix(1 0 0 1 88.729 886.1348)" fill="#9A5435" font-family="'Menlo-Regular'" font-size="17.4966">this</text>
+<text transform="matrix(1 0 0 1 130.1519 886.1348)" font-family="'Menlo-Regular'" font-size="17.4966">.store.findAll(</text>
+<text transform="matrix(1 0 0 1 285.5713 886.1348)" fill="#426BB1" font-family="'Menlo-Regular'" font-size="17.4966">&apos;rental&apos;</text>
+<text transform="matrix(1 0 0 1 368.4092 886.1348)" font-family="'Menlo-Regular'" font-size="17.4966">);</text>
+<text transform="matrix(1 0 0 1 -25.2124 907.1328)" font-family="'Menlo-Regular'" font-size="17.4966">  }</text>
+<text transform="matrix(1 0 0 1 -25.2124 928.1279)" font-family="'Menlo-Regular'" font-size="17.4966">});</text>
+<rect x="-24.8" y="1104.1" fill="none" width="420.3" height="111.7"/>
+<text transform="matrix(1 0 0 1 -24.8296 1117.3594)" fill="#426BB1" font-family="'Menlo-Regular'" font-size="17.4966">&lt;</text>
+<text transform="matrix(1 0 0 1 -14.4624 1117.3594)" fill="#3897D0" font-family="'Menlo-Regular'" font-size="17.4966">ul</text>
+<text transform="matrix(1 0 0 1 6.2241 1117.3594)" fill="#426BB1" font-family="'Menlo-Regular'" font-size="17.4966">&gt;</text>
+<text transform="matrix(1 0 0 1 -24.8296 1138.3486)" font-family="'Menlo-Regular'" font-size="17.4966">  </text>
+<text transform="matrix(1 0 0 1 -24.8296 1138.3486)" fill="none" stroke="#686868" stroke-width="0.75" stroke-miterlimit="10" font-family="'Menlo-Regular'" font-size="17.4966">  </text>
+<text transform="matrix(1 0 0 1 -4.0991 1138.3486)" fill="#3A3A3A" font-family="'Menlo-Regular'" font-size="17.4966">{{#</text>
+<text transform="matrix(1 0 0 1 26.9565 1138.3486)" fill="#BE993E" font-family="'Menlo-Regular'" font-size="17.4966">each model as </text>
+<text transform="matrix(1 0 0 1 172.0088 1138.3486)" fill="#686868" font-family="'Menlo-Regular'" font-size="17.4966">|</text>
+<text transform="matrix(1 0 0 1 182.3281 1138.3486)" fill="#BE993E" font-family="'Menlo-Regular'" font-size="17.4966">rental-unit</text>
+<text transform="matrix(1 0 0 1 296.2773 1138.3486)" fill="#686868" font-family="'Menlo-Regular'" font-size="17.4966">|}}</text>
+<text transform="matrix(1 0 0 1 -24.8296 1159.3477)" font-family="'Menlo-Regular'" font-size="17.4966">    </text>
+<text transform="matrix(1 0 0 1 -24.8296 1159.3477)" fill="none" stroke="#686868" stroke-width="0.75" stroke-miterlimit="10" font-family="'Menlo-Regular'" font-size="17.4966">    </text>
+<text transform="matrix(1 0 0 1 16.5933 1159.3477)" fill="#3A3A3A" font-family="'Menlo-Regular'" font-size="17.4966">{{</text>
+<text transform="matrix(1 0 0 1 37.3257 1159.3477)" fill="#BE993E" font-family="'Menlo-Regular'" font-size="17.4966">rental-tile</text>
+<text transform="matrix(1 0 0 1 151.2725 1159.3477)" font-family="'Menlo-Regular'" font-size="17.4966"> </text>
+<text transform="matrix(1 0 0 1 161.6338 1159.3477)" fill="#BE993E" font-family="'Menlo-Regular'" font-size="17.4966">rental</text>
+<text transform="matrix(1 0 0 1 223.7949 1159.3477)" fill="#426BB1" font-family="'Menlo-Regular'" font-size="17.4966">=</text>
+<text transform="matrix(1 0 0 1 234.1582 1159.3477)" fill="#BE993E" font-family="'Menlo-Regular'" font-size="17.4966">rental-unit</text>
+<text transform="matrix(1 0 0 1 348.1064 1159.3477)" fill="#686868" font-family="'Menlo-Regular'" font-size="17.4966">}}</text>
+<text transform="matrix(1 0 0 1 -24.8296 1180.3457)" font-family="'Menlo-Regular'" font-size="17.4966">  </text>
+<text transform="matrix(1 0 0 1 -24.8296 1180.3457)" fill="none" stroke="#686868" stroke-width="0.75" stroke-miterlimit="10" font-family="'Menlo-Regular'" font-size="17.4966">  </text>
+<text transform="matrix(1 0 0 1 -4.0991 1180.3457)" fill="#3A3A3A" font-family="'Menlo-Regular'" font-size="17.4966">{{/</text>
+<text transform="matrix(1 0 0 1 26.9565 1180.3457)" fill="#BE993E" font-family="'Menlo-Regular'" font-size="17.4966">each</text>
+<text transform="matrix(1 0 0 1 68.3813 1180.3457)" fill="#686868" font-family="'Menlo-Regular'" font-size="17.4966">}}</text>
+<text transform="matrix(1 0 0 1 -24.8296 1201.3408)" fill="#426BB1" font-family="'Menlo-Regular'" font-size="17.4966">&lt;/</text>
+<text transform="matrix(1 0 0 1 -4.0991 1201.3408)" fill="#3897D0" font-family="'Menlo-Regular'" font-size="17.4966">ul</text>
+<text transform="matrix(1 0 0 1 16.5933 1201.3408)" fill="#426BB1" font-family="'Menlo-Regular'" font-size="17.4966">&gt;</text>
+<g>
+	<line fill="none" x1="-239.1" y1="774.6" x2="-239.1" y2="812.3"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="-239.1" y1="774.6" x2="-239.1" y2="805.5"/>
+		<g>
+			<polygon points="-231.2,804.3 -247.1,804.3 -239.1,812.3 			"/>
+		</g>
+	</g>
+</g>
+<rect x="-478.5" y="681.2" fill="none" width="155.2" height="84.4"/>
+<text transform="matrix(1 0 0 1 -478.4858 700.6914)" fill="#FFFFFF" font-family="'Lato-BoldItalic'" font-size="26.2449">Maps:</text>
+<text transform="matrix(1 0 0 1 -410.1587 700.6914)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449"> </text>
+<text transform="matrix(1 0 0 1 -478.4858 732.1865)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449">-URL to </text>
+<text transform="matrix(1 0 0 1 -478.4858 763.6787)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449">a router</text>
+<rect x="-479.2" y="819" fill="none" width="155.2" height="101.4"/>
+<text transform="matrix(1 0 0 1 -479.2017 838.4854)" fill="#FFFFFF" font-family="'Lato-BoldItalic'" font-size="26.2449">Loads:</text>
+<text transform="matrix(1 0 0 1 -479.2017 869.9795)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449">-a template</text>
+<text transform="matrix(1 0 0 1 -479.2017 901.4756)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449">-a model</text>
+<rect x="-479.9" y="983.3" fill="none" width="155.2" height="101.4"/>
+<text transform="matrix(1 0 0 1 -479.9253 1002.7959)" fill="#FFFFFF" font-family="'Lato-BoldItalic'" font-size="26.2449">Persists to:</text>
+<text transform="matrix(1 0 0 1 -479.9253 1034.2852)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449">-web server</text>
+<rect x="-479.9" y="1093" fill="none" width="155.2" height="144.6"/>
+<text transform="matrix(1 0 0 1 -479.9253 1112.3896)" fill="#FFFFFF" font-family="'Lato-BoldItalic'" font-size="26.2449">Loads:</text>
+<text transform="matrix(1 0 0 1 -479.9253 1143.8857)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449">-components</text>
+<text transform="matrix(1 0 0 1 -479.9253 1185.8818)" fill="#FFFFFF" font-family="'Lato-BoldItalic'" font-size="26.2449">Accesses:</text>
+<text transform="matrix(1 0 0 1 -479.9253 1217.374)" fill="#FFFFFF" font-family="'Lato-Italic'" font-size="26.2449">-model data</text>
+<g>
+	<line fill="none" x1="-239.1" y1="1223.3" x2="-239.1" y2="1292.5"/>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="-239.1" y1="1223.3" x2="-239.1" y2="1285.6"/>
+		<g>
+			<polygon points="-231.2,1284.6 -247.1,1284.6 -239.1,1292.5 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<line fill="none" x1="-239.1" y1="637" x2="-239.1" y2="674.8"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="-239.1" y1="637" x2="-239.1" y2="667.8"/>
+		<g>
+			<polygon points="-231.2,666.7 -247.1,666.7 -239.1,674.8 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<line fill="none" x1="-94.9" y1="1223.4" x2="-26.3" y2="1291.9"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="-94.9" y1="1223.4" x2="-31.2" y2="1287.1"/>
+		<g>
+			<polygon points="-26.3,1280.6 -37.6,1291.9 -26.3,1291.9 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<line fill="none" x1="-65.6" y1="1223.8" x2="285.3" y2="1287.2"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="-65.6" y1="1223.8" x2="278.5" y2="1285.9"/>
+		<g>
+			<polygon points="278.9,1277.8 275.9,1293.5 285.3,1287.2 			"/>
+		</g>
+	</g>
+</g>
+<rect x="-39.3" y="1318.6" fill="none" width="250.2" height="105"/>
+<text transform="matrix(1 0 0 1 14.062 1338.9531)" font-family="'Lato-Bold'" font-size="27.2728">Component</text>
+<text transform="matrix(1 0 0 1 -22.3784 1365.2002)" font-family="'Lato-Italic'" font-size="18.3714">app/components/rental-tile.js</text>
+<text transform="matrix(1 0 0 1 -22.3784 1380.9434)" font-family="'Lato-Italic'" font-size="14.4346">templates/components/rental-tile.hbs</text>
+<rect x="222.3" y="1318.6" fill="none" width="250.2" height="105"/>
+<text transform="matrix(1 0 0 1 275.7295 1338.9531)" font-family="'Lato-Bold'" font-size="27.2728">Component</text>
+<text transform="matrix(1 0 0 1 239.3018 1365.2002)" font-family="'Lato-Italic'" font-size="18.3714">app/components/rental-tile.js</text>
+<text transform="matrix(1 0 0 1 239.3018 1380.9434)" font-family="'Lato-Italic'" font-size="14.4346">templates/components/rental-tile.hbs</text>
+<rect x="-300.9" y="1318.6" fill="none" width="250.2" height="105"/>
+<text transform="matrix(1 0 0 1 -247.4014 1338.9531)" font-family="'Lato-Bold'" font-size="27.2728">Component</text>
+<text transform="matrix(1 0 0 1 -283.833 1365.2002)" font-family="'Lato-Italic'" font-size="18.3714">app/components/rental-tile.js</text>
+<text transform="matrix(1 0 0 1 -283.833 1380.9434)" font-family="'Lato-Italic'" font-size="14.4346">templates/components/rental-tile.hbs</text>
+<path fill="#FAF2ED" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" d="M-139.9,1054.1"/>
+<path fill="#FAF2ED" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" d="M-135.8,1054.1"/>
+<line fill="none" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" x1="-7.7" y1="1054.1" x2="-8.7" y2="1054.1"/>
+<g>
+	<ellipse fill="#FAF2ED" stroke="#232222" stroke-width="0.75" stroke-miterlimit="10" cx="24.2" cy="1039.6" rx="74.8" ry="13.8"/>
+	<polyline fill="#FAF2ED" stroke="#171617" stroke-width="0.75" stroke-miterlimit="10" points="-50.7,1039.6 -50.7,996 99,996 
+		99,1039.6 	"/>
+	<rect x="96.8" y="1038.7" fill="#FAF2ED" width="1.9" height="1.2"/>
+</g>
+<ellipse fill="#FAF2ED" stroke="#2D2C2C" stroke-width="0.75" stroke-miterlimit="10" cx="24.2" cy="996" rx="74.8" ry="13.8"/>
+<rect x="-50.7" y="1021.4" fill="none" width="149.4" height="27.4"/>
+<text transform="matrix(1 0 0 1 -12.981 1040.665)" font-family="'Lato-Regular'" font-size="26.2449">Model</text>
+</svg>
+
