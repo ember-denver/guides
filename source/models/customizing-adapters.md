@@ -32,7 +32,7 @@ export default DS.JSONAPIAdapter.extend({
 
 If you have one model that has exceptional rules for communicating
 with its backend than the others you can create a Model specific
-Adapter by running the command `ember generate adapter adapter-name`".
+Adapter by running the command `ember generate adapter adapter-name`.
 For example, running `ember generate adapter post` will create the
 following file:
 
@@ -42,7 +42,7 @@ export default DS.JSONAPIAdapter.extend({
 });
 ```
 
-By default Ember Data comes with several builtin adapters. Feel free
+By default Ember Data comes with several built-in adapters. Feel free
 to use these adapters as a starting point for creating your own custom
 adapter.
 
@@ -123,7 +123,8 @@ export default {};
 ```
 
 This will tell the JSON API adapter that requests for `formula`
-should go to `/formulae/1` instead of `/formulas/1`.
+should go to `/formulae/1` instead of `/formulas/1`, and that
+requests for `advice` should go to `/advice/1` instead of `/advices/1`.
 
 #### Endpoint Path Customization
 

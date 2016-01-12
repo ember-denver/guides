@@ -60,7 +60,7 @@ Router.map(function() {
 Ember will alternate trying to find a `routeName-loading` or `loading` template
 in the hierarchy starting with `foo.bar.slow-model-loading`:
 
-1. `slow-model-loading`
+1. `foo.bar.slow-model-loading`
 2. `foo.bar.loading` or `foo.bar-loading`
 3. `foo.loading` or `foo-loading`
 4. `loading` or `application-loading`
@@ -159,12 +159,12 @@ redirect to a login page, etc.
 ```app/routes/articles-overview.js
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findAll('nonexistentModel');
+    return this.store.findAll('problematicModel');
   },
   actions: {
     error(error, transition) {
-      if (error && error.status === 400) {
-        return this.transitionTo('modelNotFound');
+      if (error) {
+        return this.transitionTo('errorPage');
       }
     }
   }

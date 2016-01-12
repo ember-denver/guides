@@ -65,24 +65,63 @@ match the type you would like to use in your JavaScript code. Ember
 Data allows you to define simple serialization and deserialization
 methods for attribute types called transforms. You can specify that
 you would like a transform to run for an attribute by providing the
-transform name as the first argument to the `DS.attr` method.
-
-For example if you would like to transform an
-[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string to a
-JavaScript date object you would define your attribute like this:
+transform name as the first argument to the `DS.attr` method. Ember Data
+supports attribute types of `string`, `number`, `boolean`, and `date`,
+which coerce the value to the JavaScript type that matches its name.
 
 ```app/models/person.js
 export default DS.Model.extend({
+  name: DS.attr('string'),
+  age: DS.attr('number'),
+  admin: DS.attr('boolean'),
   birthday: DS.attr('date')
 });
 ```
 
-Ember Data supports attribute types of `string`, `number`, `boolean`,
-and `date`. Which coerce the value to the JavaScript type that matches
-its name.
+The `date` transform will transform an
+[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string to a JavaScript
+date object.
+
+The `boolean` transform can handle values other than `true` or
+`false`. The strings `"true"` or `"t"` in any casing, `"1"`, and the number
+`1` will all coerce to `true`, and `false` otherwise.
 
 Transforms are not required. If you do not specify a transform name
 Ember Data will do no additional processing of the value.
+
+#### Custom Transforms
+
+You can also create custom transforms with Ember CLI's `transform` generator:
+
+```bash
+ember generate transform dollars
+```
+
+Here is a simple transform that converts values between cents and US dollars.
+
+```app/transforms/dollars.js
+export default DS.Transform.extend({
+  deserialize: function(serialized) {
+    return serialized / 100; // returns dollars
+  },
+
+  serialize: function(deserialized) {
+    return deserialized * 100; // returns cents
+  }
+});
+```
+
+A transform has two functions: `serialize` and `deserialize`. Deserialization
+converts a value to a format that the client expects. Serialization does the
+reverse and converts a value to the format expected by the persistence layer.
+
+You would use the custom `dollars` transform like this:
+
+```app/models/product.js
+export default DS.Model.extend({
+  spent: DS.attr('dollars')
+});
+```
 
 ### Options
 
@@ -104,137 +143,3 @@ export default DS.Model.extend({
   })
 });
 ```
-
-
-## Defining Relationships
-
-Ember Data includes several built-in relationship types to help you
-define how your models relate to each other.
-
-### One-to-One
-
-To declare a one-to-one relationship between two models, use
-`DS.belongsTo`:
-
-```app/models/user.js
-export default DS.Model.extend({
-  profile: DS.belongsTo('profile')
-});
-```
-
-```app/models/profile.js
-export default DS.Model.extend({
-  user: DS.belongsTo('user')
-});
-```
-
-### One-to-Many
-
-To declare a one-to-many relationship between two models, use
-`DS.belongsTo` in combination with `DS.hasMany`, like this:
-
-```app/models/post.js
-export default DS.Model.extend({
-  comments: DS.hasMany('comment')
-});
-```
-
-```app/models/comment.js
-export default DS.Model.extend({
-  post: DS.belongsTo('post')
-});
-```
-
-### Many-to-Many
-
-To declare a many-to-many relationship between two models, use
-`DS.hasMany`:
-
-```app/models/post.js
-export default DS.Model.extend({
-  tags: DS.hasMany('tag')
-});
-```
-
-```app/models/tag.js
-export default DS.Model.extend({
-  posts: DS.hasMany('post')
-});
-```
-
-### Explicit Inverses
-
-Ember Data will do its best to discover which relationships map to one
-another. In the one-to-many code above, for example, Ember Data can figure out that
-changing the `comments` relationship should update the `post`
-relationship on the inverse because `post` is the only relationship to
-that model.
-
-However, sometimes you may have multiple `belongsTo`/`hasMany`s for
-the same type. You can specify which property on the related model is
-the inverse using `DS.belongsTo` or `DS.hasMany`'s `inverse`
-option. Relationships without an inverse can be indicated as such by
-including `{ inverse: null }`.
-
-
-```app/models/comment.js
-export default DS.Model.extend({
-  onePost: DS.belongsTo('post', { inverse: null }),
-  twoPost: DS.belongsTo('post'),
-  redPost: DS.belongsTo('post'),
-  bluePost: DS.belongsTo('post')
-});
-```
-
-```app/models/post.js
-export default DS.Model.extend({
-  comments: DS.hasMany('comment', {
-    inverse: 'redPost'
-  })
-});
-```
-
-### Reflexive Relations
-
-When you want to define a reflexive relation (a model that has a relationship to
-itself), you must explicitly define the inverse relationship. If there
-is no inverse relationship then you can set the inverse to `null`.
-
-Here's an example of a one-to-many reflexive relationship:
-
-```app/models/folder.js
-export default DS.Model.extend({
-  children: DS.hasMany('folder', { inverse: 'parent' }),
-  parent: DS.belongsTo('folder', { inverse: 'children' })
-});
-```
-
-Here's an example of a one-to-one reflexive relationship:
-
-```app/models/user.js
-export default DS.Model.extend({
-  name: DS.attr('string'),
-  bestFriend: DS.belongsTo('user', { inverse: 'bestFriend' }),
-});
-```
-
-You can also define a reflexive relationship that doesn't have an inverse:
-
-```app/models/folder.js
-export default DS.Model.extend({
-  parent: DS.belongsTo('folder', { inverse: null })
-});
-```
-
-### Readonly Nested Data
-
-Some models may have properties that are deeply nested objects of
-readonly data. The naïve solution would be to define models for each
-nested object and use `hasMany` and `belongsTo` to recreate the nested
-relationship. However, since readonly data will never need to be
-updated and saved this often results in the creation of a great deal
-of code for very little benefit. An alternate approach is to define
-these relationships using an attribute with no transform
-(`DS.attr()`). This makes it easy to access readonly values in
-computed properties and templates without the overhead of defining
-extraneous models.

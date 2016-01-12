@@ -93,7 +93,7 @@ routes, it will load a template with the same name (`application` in
 this case) by default.
 You should put your header, footer, and any other decorative content
 here. All other routes will render
-their templates into the `application.hbs` templates's `{{outlet}}`.
+their templates into the `application.hbs` template's `{{outlet}}`.
 
 This route is part of every application, so you don't need to
 specify it in your `app/router.js`.
@@ -195,30 +195,6 @@ Router.map(function() {
   this.route('page-not-found', { path: '/*wildcard' });
 });
 ```
-
-## Resetting Nested Route Namespace
-
-When nesting routes, it may be beneficial for a child route to not inherit its ancestors name. This allows you to reference and reuse a given route in multiple route trees as well as keep the class name short.
-
-You can reset the current "namespace" with the aptly named `resetNamespace: true` option.
-
-```app/router.js
-Router.map(function() {
-  this.route('post', { path: '/post/:post_id' }, function() {
-    this.route('edit');
-    this.route('comments', { resetNamespace: true }, function() {
-      this.route('new');
-    });
-  });
-});
-```
-
-Just like before, the `comments` template will be rendered in the `post`
-template's `{{outlet}}`, and all templates under `comments` (`comments/index`
-and `comments/new`) will be rendered in the `comments` outlet.
-
-However, the `/post/:id/comments` path will load the `comments.hbs` template,
-rather than the `post/comments.hbs` template.
 
 ## Route Handlers
 

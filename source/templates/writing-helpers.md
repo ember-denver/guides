@@ -60,15 +60,13 @@ count of cents into a formatted string, like `"$5.00"`.
 Whenever you use your helper in a template, Ember will call this
 function and insert whatever you return from the helper into the DOM.
 
-So, for example, if we had a template like this where we pass a value in
-cents:
+So, if we want to display a purchase total we can pass the value into the template in cents:
 
 ```hbs
 Your total is {{format-currency 250}}.
 ```
 
-Ember would replace the content inside the `{{ }}` with the formatted
-amount:
+And Ember makes use of our new helper function to replace the content inside the ```{{ }}``` with the formatted amount.
 
 ```hbs
 Your total is $2.50.
@@ -76,7 +74,7 @@ Your total is $2.50.
 
 Whenever the arguments you've passed to a helper change, whether they
 come from a model or a component, Ember will automatically call your
-helper again with the new values and keep the DOM up-to-date.
+helper again with the new values and keep the page up-to-date.
 
 ### Helper Names
 
@@ -85,7 +83,7 @@ their name.
 
 ### Helper Arguments
 
-You can pass one or more arguments to  which can be used
+You can pass one or more arguments to be used
 inside the function. In the above example, we passed the amount in cents
 as the first and only argument.
 
@@ -239,10 +237,6 @@ should export a subclass of [`Ember.Helper`][1]. Helper classes must contain a
 into the class-based helper.  Once added, you can call the service's methods or
 access its properties from within the `compute()` method.
 
-[1]: http://emberjs.com/api/classes/Ember.Helper.html
-[2]: http://emberjs.com/api/classes/Ember.Helper.html#method_compute
-[3]: http://emberjs.com/api/classes/Ember.Helper.html#method_helper
-
 To exemplify, let's make a helper utilizing an authentication service that
 welcomes users by their name if they're logged in:
 
@@ -311,7 +305,7 @@ Ember will escape the HTML tags, like this:
 This shows the literal string `<b>Hello world</b>` to the user, rather
 than the text in bold as you probably intended. We can tell Ember not to
 escape the return value (that is, that it is _safe_) by using the
-[`htmlSafe`][1] string utility:
+[`htmlSafe`][4] string utility:
 
 ```app/helpers/make-bold.js
 export default Ember.Helper.helper(function(params) {
@@ -320,10 +314,8 @@ export default Ember.Helper.helper(function(params) {
 ```
 
 If you return a `SafeString` (a string that has been wrapped in a call
-to [`htmlSafe`][1]), Ember knows that you have vouched on its behalf that it
+to [`htmlSafe`][4]), Ember knows that you have vouched on its behalf that it
 contains no malicious HTML.
-
-[1]: http://emberjs.com/api/classes/Ember.String.html#method_htmlSafe
 
 However, note that in the above code we may have inadvertently
 introduced an XSS vulnerability into our application! By blindly marking
@@ -364,3 +356,7 @@ would see this:
 Welcome back! <b>&lt;script
 type="javascript"&gt;alert('pwned!');&lt;/script&gt;</b> has joined the channel.
 ```
+[1]: http://emberjs.com/api/classes/Ember.Helper.html
+[2]: http://emberjs.com/api/classes/Ember.Helper.html#method_compute
+[3]: http://emberjs.com/api/classes/Ember.Helper.html#method_helper
+[4]: http://emberjs.com/api/classes/Ember.String.html#method_htmlSafe

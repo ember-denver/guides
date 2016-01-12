@@ -1,6 +1,7 @@
 require 'redcarpet'
 require 'active_support'
 require 'active_support/core_ext'
+require 'support-for'
 
 Dir['./lib/*'].each { |f| require f }
 
@@ -59,8 +60,11 @@ end
 # Build
 ###
 configure :build do
+  set :spellcheck_allow_file, "./data/spelling-exceptions.txt"
+  activate :spellcheck, ignore_selector: '.CodeRay', page: /^(?!.*stylesheets|.*javascript|.*fonts|.*images|.*analytics).*$/
   activate :minify_css
   activate :minify_javascript, ignore: /.*examples.*js/
+  activate :html_proofer
 end
 
 ###

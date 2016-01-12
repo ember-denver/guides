@@ -1,8 +1,12 @@
 $(function(){
   $(".toc-level-0 .toc-level-0 > a").click(function() {
-    $(this).parent().find('> ol').slideToggle();
+    $(this).parent().find('> ol').slideToggle(200);
 
     return false;
+  });
+
+  $('label[for="toc-toggle"]').click(function() {
+    $('.toc-container').slideToggle(500);
   });
 
   $(function(){

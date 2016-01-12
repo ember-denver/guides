@@ -6,16 +6,21 @@ total beginner to Ember expert.
 On the left side of each page in the Guides is a table of contents,
 organized into sections that can be expanded to show the topics
 they cover. Both the sections and the topics within each section are
-ordered from the most basic concepts to more advanced.
+ordered from the most basic concepts to the more advanced.
 
 The Guides are intended to contain practical explanations of how to
 build Ember apps, focusing on the most widely-used features of Ember.js.
 For exhaustive documentation of every Ember feature and API, see the
 [Ember.js API documentation](http://emberjs.com/api/).
 
+The Guides begin with an explanation of how to get started with Ember, followed
+by a tutorial on how to build your first Ember app. If you're brand new to
+Ember, we recommend you start off by following along with these first two
+sections of the Guides.
+
 ## Assumptions
 
-While we try to make the guides as beginner-friendly as we can, we must
+While we try to make the Guides as beginner-friendly as we can, we must
 establish a baseline so that the guides can keep focused on Ember.js
 functionality. We will try to link to appropriate documentation whenever
 a concept is introduced.
@@ -42,7 +47,7 @@ Some of the more common ways to report a problem with the guides are:
 * Using the pencil icon on the top-right of each guide page
 * Opening an issue/pull request to [the GitHub repository][gh-guides]
 
-Clicking the the pencil icon will bring you to GitHub's editor for that
+Clicking the pencil icon will bring you to GitHub's editor for that
 guide so you can edit right away, using the Markdown markup language.
 This is the fastest way to correct a typo, a missing word, or an error in
 a code sample.
@@ -59,7 +64,7 @@ group][slackin].
 Good luck!
 
 [mdn]: https://developer.mozilla.org/en-US/docs/Web
-[promises]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise 
+[promises]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 [js-modules]: http://jsmodules.io/
 [babeljs]: https://babeljs.io/docs/learn-es2015/
 [es6]: https://leanpub.com/understandinges6/read

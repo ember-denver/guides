@@ -131,7 +131,7 @@ test('should update title on button click', function(assert) {
 ### Testing Actions
 
 Components starting in Ember 2 utilize closure actions. Closure actions allow components
-to directly invoke functions provided outer components.
+to directly invoke functions provided by outer components.
 
 For example, imagine you have a comment form component that invokes a
 `submitComment` action when the form is submitted, passing along the form's data:
@@ -145,7 +145,7 @@ export default Ember.Component.extend({
 
   actions: {
     submitComment() {
-      this.attrs.submitComment({ comment: this.get('comment') });
+      this.get('submitComment')({ comment: this.get('comment') });
     }
   }
 });
@@ -245,7 +245,9 @@ moduleForComponent('location-indicator', 'Integration | Component | location ind
 
   beforeEach: function () {
     this.register('service:location-service', locationStub);
-    this.inject.service('location-service', { as: 'location' });
+    // Calling inject puts the service instance in the test's context,
+    // making it accessible as "locationService" within each test
+    this.inject.service('location-service', { as: 'locationService' });
   }
 });
 ```
@@ -267,9 +269,9 @@ when we modify the values on the service.
 test('should change displayed location when current location changes', function (assert) {
   this.render(hbs`{{location-indicator}}`);
   assert.equal(this.$().text().trim(), 'You currently are located in New York, USA', 'origin location should display');
-  this.set('location.city', 'Beijing');
-  this.set('location.country', 'China');
-  this.set('location.currentLocation', { x: 11111, y: 222222 });
+  this.set('locationService.city', 'Beijing');
+  this.set('locationService.country', 'China');
+  this.set('locationService.currentLocation', { x: 11111, y: 222222 });
   assert.equal(this.$().text().trim(), 'You currently are located in Beijing, China', 'location display should change');
 });
 ```
